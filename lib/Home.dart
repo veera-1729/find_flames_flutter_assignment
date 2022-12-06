@@ -138,8 +138,9 @@ class Home extends StatelessWidget {
                       ),
                       Positioned(
                         top: -20.h,
+                       
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 30.w),
+                          padding: EdgeInsets.symmetric(horizontal: 5.w),
                           child: Material(
                             elevation: 6.0,
                             borderRadius: BorderRadius.circular(20.r),
