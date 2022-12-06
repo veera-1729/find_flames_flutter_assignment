@@ -42,16 +42,17 @@ class ProfileView extends StatelessWidget {
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
                   name,
                   style: TextStyle(fontSize: 12),
                 ),
-                Image.asset(
+                !profile ?  Image.asset(
                   "assets/images/Vector.png",
                   height: 10,
                   width: 10,
-                ),
+                ): Text(" "),
               ],
             ),
           ),

@@ -54,8 +54,8 @@ class Contact extends StatelessWidget {
                       blueTick
                           ? Image.asset(
                               "assets/images/Vector.png",
-                              height: 10,
-                              width: 10,
+                              height: 16,
+                              width: 16,
                             )
                           : Text(""),
                     ],
@@ -84,7 +84,7 @@ class Contact extends StatelessWidget {
                     )
                   : const Text(" "),
             ],
-          )
+          ),
         ],
       ),
     );
