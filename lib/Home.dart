@@ -2,6 +2,7 @@ import 'package:find_flames/utils/Profile_View.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import './utils/Contacts.dart';
 
 class Home extends StatelessWidget {
@@ -33,7 +34,7 @@ class Home extends StatelessWidget {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
-            padding: EdgeInsets.only(top: 15),
+            padding: EdgeInsets.only(top: 15.h),
             child: Column(
               children: [
                 Stack(
@@ -42,46 +43,46 @@ class Home extends StatelessWidget {
                       children: [
                         Container(
                           padding: EdgeInsets.only(top:10),
-                          height: 240,
+                          height: 240.h,
                           width: double.infinity,
                           color: Color.fromARGB(255, 255, 194, 214),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 20.0),
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 20.w),
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Image.asset(
                                       "assets/images/Ellipse1.png",
-                                      width: 50,
-                                      height: 50,
+                                      width: 50.w,
+                                      height: 50.h,
                                     ),
                                     Text(
                                       "Puzzles",
                                       style: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: 20.sp,
                                         color: Color.fromRGBO(255, 95, 143, 1),
                                       ),
                                     ),
                                     Image.asset(
                                       "assets/images/Vector1.png",
-                                      height: 18,
-                                      width: 20,
+                                      height: 18.h,
+                                      width: 20.w,
                                     ),
                                   ],
                                 ),
                               ),
                               SizedBox(
-                                height: 30,
+                                height: 30.h,
                               ),
                               Container(
-                                height: 120,
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 20.0),
+                                height: 120.h,
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 20.w),
                                 child: ListView.builder(
                                   scrollDirection: Axis.horizontal,
                                   itemCount: 4,
@@ -104,11 +105,11 @@ class Home extends StatelessWidget {
 
                 Container(
                   // padding: EdgeInsets.only(top: 60, left: 10, right: 10),
-                  height: 700,
+                  height: 700.h,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      topRight: Radius.circular(20),
+                      topLeft: Radius.circular(20.r),
+                      topRight: Radius.circular(20.r),
                     ),
                     //color: Colors.green,
                   ),
@@ -116,8 +117,8 @@ class Home extends StatelessWidget {
                     clipBehavior: Clip.none,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(
-                            top: 60.0, left: 10, right: 10),
+                        padding: EdgeInsets.only(
+                            top: 60.h, left: 10.w, right: 10.w),
                         child: ListView.builder(
                           itemCount: 3,
                           shrinkWrap: true,
@@ -136,17 +137,17 @@ class Home extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        top: -20,
+                        top: -20.h,
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 30),
+                          padding: EdgeInsets.symmetric(horizontal: 30.w),
                           child: Material(
                             elevation: 6.0,
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(20.r),
                             child: Container(
-                              height: 40,
-                              width: 350,
+                              height: 40.h,
+                              width: 350.w,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
+                                borderRadius: BorderRadius.circular(20.r),
                                 color: Colors.white,
                               ),
                               child: TextField(
@@ -171,29 +172,29 @@ class Home extends StatelessWidget {
       ),
       bottomNavigationBar: BottomAppBar(
         child: Padding(
-          padding: EdgeInsets.only(top: 20, bottom: 20),
+          padding: EdgeInsets.only(top: 20.h, bottom: 20.h),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Image.asset(
                 "assets/images/Home.png",
-                height: 28,
-                width: 29,
+                height: 28.h,
+                width: 29.w,
               ),
               Image.asset(
                 "assets/images/globalsearch.png",
-                height: 28,
-                width: 29,
+                height: 28.h,
+                width: 29.w,
               ),
               Image.asset(
                 "assets/images/calendaredit.png",
-                height: 28,
-                width: 29,
+                height: 28.h,
+                width: 29.w,
               ),
               Image.asset(
                 "assets/images/messages3.png",
-                height: 28,
-                width: 29,
+                height: 28.h,
+                width: 29.w,
               ),
             ],
           ),
